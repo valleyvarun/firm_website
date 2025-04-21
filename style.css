@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: grey;
+    text-align: center;
+    padding: 5px;
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the page */
+    left: 0;
+    width: 100%; /* Ensure it spans the full width of the page */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+header img {
+    max-width: 50px;
+}
+
+/* Main Content */
+main {
+    margin-top: 100px; /* Fixed margin at the top */
+    margin-left: 10vh; /* Left margin as 10% of viewport height */
+    margin-right: 10vh; /* Right margin as 10% of viewport height */
+    margin-bottom: 10vh; /* Bottom margin as 10% of viewport height */
+}
+
+/* About Us and PDF Viewer */
+.about-pdf-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#about {
+    flex: 1;
+}
+
+iframe {
+    flex: 1;
+    aspect-ratio: 8 / 5;
+    border: 1px solid #ccc;
+}
+
+/* Thumbnails and Contact Links */
+.thumbnails-contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Thumbnails */
+.thumbnails {
+    flex: 2; /* Give more space to the thumbnails */
+}
+
+.thumbnail-list {
+    display: flex; /* Display thumbnails in a horizontal row */
+    flex-direction: row; /* Ensure thumbnails are arranged horizontally */
+    align-items: flex-start; /* Align thumbnails to the top */
+    justify-content: flex-start; /* Align thumbnails to the left */
+    gap: 50px; /* Add consistent spacing between thumbnails */
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text below the thumbnail */
+    text-align: center;
+}
+
+.thumbnail-box {
+    width: 10vh; /* Height is based on viewport height */
+    aspect-ratio: 1 / 1.414; /* A4 aspect ratio */
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+
+.thumbnail a {
+    text-decoration: none; /* Remove underline from the text */
+    color: black; /* Set text color */
+    font-size: 14px; /* Adjust font size if needed */
+}
+
+/* Contact Links */
+.contact-links {
+    flex: 1; /* Reduce the space for contact links */
+    text-align: right; /* Align the content to the right */
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end; /* Push items to the right */
+}
+
+.contact-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
